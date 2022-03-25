@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="vn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metaversity</title>
+    <link rel="stylesheet" href="./css/css1.css">
+    <link rel="stylesheet" href="./css/css2.css">
+    <link rel="stylesheet" href="./css/css3.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.6.3/css/all.css'>
+    <script src="https://kit.fontawesome.com/1aa665d1d7.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="./ar-glasses.png">
+    <meta name="description" content="Metaversity는 Visual Production/ 실감형 콘텐츠 / Digital Human / Digital Education 분야의 미래를 밝히려 합니다.
+    빠르게 변화하는 디지털 교육 환경 속에서 Metaversity만의 기술력과 창의성으로 E-Learning의 품질을 더욱 높이겠습니다...">
+</head>
+<body>
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+        <img src="./img/img1.png" style="width:100%; max-height: 100vh;">
+        </div>
+        
+        <div class="mySlides fade">
+        <img src="./img/img2.png" style="width:100%;max-height: 100vh">
+        </div>
+        
+        <div class="mySlides fade">
+        <img src="./img/banner-homepage-3.png" style="width:100%;max-height: 100vh">
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+        </div>
+        
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+            showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+            showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}    
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+            }
+        </script>
+    <div class="main main-mobile">
+        <div class="grid wide">
+            <div class="row">
+                <div class="logo l-3 m-5 c-9 m-left c-margin-top" >
+                    <a href="./index-eng.html" style="text-decoration: none;"><h2 style="font-weight: bolder; font-size: 18px; color: white;">UPSTREAM CO,.LTD</h2></a>
+                </div>
+                <div class="categories l-9 m-0 c-0">
+                    <ul class=" category-list">
+                        <li><a href="#about-us">About us</a></li>
+                        <li><a href="./services-eng.html">Business</a></li>
+                        <li><a href="#project">Service performance</a></li>
+                        <li><a href="#partners">Partners</a></li>
+                        <li><a href="#contact-us">Contact us</a></li>
+                        <div style="display: flex; margin-left: 5px;">
+                            <li><a href="./index-eng.html"><img style="width:20px; height: 20px;" src="./img/united-kingdom.png" alt=""></a></li>
+                            <li><a href="./index.html"><img style="width:20px; height: 20px;" src="./img/south-korea.png" alt=""></a></li>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <label for="opening">
+            <div class="grid wide">
+                <div class="row">
+                    <div class="bars l-0 m-o-1 m-2 c-2" style="margin-right:8.3% ;top: -7px;">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                </div>
+            </div>
+        </label>
+        <input type="checkbox" hidden name="" class="open-over-lay" id="opening">
+        <label for="opening" class="overlay-small-screen" class=""></label>
+        <nav class="menu-small-screen">
+            <ul class="categories-small-screen">
+                <li><a href="#about-us"> About us</a></li>
+                <li><a href="./services-eng.html">Business</a></li>
+                <li><a href="#project">Service performance</a></li>
+                <li><a href="#partners"></i>Partners</a></li>
+                <li><a href="#contact-us"></i>Contact us</a></li>
+                <li><a href="./index-eng.html">English version<img style="width:20px; height: 20px; margin-left:10px" src="./img/united-kingdom.png" alt=""></a></li>
+                <li><a href="./index.html">Korean version<img style="width:20px; height: 20px;margin-left:10px" src="./img/south-korea.png" alt=""></a></li>
+            </ul>
+            <label for="opening" class="close-button">
+                <i class="fas fa-times"></i>
+            </label>
+        </nav>
+        <div class="content-homepage l-o-6 l-5 m-o-6 m-5 c-6 mobile-text-homepage">
+            <h1 class=" mobile-h1">Welcome to <br> Metaverse world</h1>
+            <p style="margin-top:-10px">The best quality and technology</p>
+            <a href="#">Learn more</a> 
+        </div>
+    </div>
+    <div id="about-us">
+        <div class=" grid wide">
+            <div class="row">
+                <div class="col l-12 m-12 c-12">
+                    <h2 class="pc-h1 mobile-h2" style="color: #09007a;">About us</h2>
+                    <p class="pc-p mobile-p">
+                        Metaversity is going to illuminate the future of Visual Production/ Immersive Contents / Digital Human / Digital Education industry.
+                        <br><br>
+                        In a rapidly changing digital educational environment, we will more enhance the quality of 
+                        e-Learning through metaversity's unique technological and creativity.
+                  </p>
+                </div>
+            </div>
+        </div>
+        <div class=" grid wide">
+            <div class="row">
+                <div class="col l-12 m-12 c-12">
+                    <h3 class="pc-h1 mobile-h1" style="text-align:left; color: #09007a;">What is metaversity?</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class=" grid wide">
+        <div class="row">
+            <div class="video-area col l-12 m-12 c-12">        
+                <div class="container">
+                    <div class="video-view-content" data-aos="fade-up" data-aos-delay="80" data-aos-duration="800" data-aos-once="true">
+                        <div class="video-image">
+                            <img src="https://templates.envytheme.com/coze/default/assets/images/video/video.jpg" alt="image">
+                        </div>
+
+                        <a href="https://www.youtube.com/watch?v=KLOcj5qvOio&ab_channel=Meta" target="_blank" class="video-btn popup-youtube">
+                            <img src="./img/play-button-arrowhead.png" alt="" style="color: purple; height: 50%; width: 50%; margin-bottom: 25px;margin-left: 10px;">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="service">
+        <div class="service">
+            <a style="text-decoration: none;" href="./services-eng.html"><h2 class="pc-h1 mobile-h2" style="color: #ffffff;padding-top:110px">Business</h2></a>
+            <br>
+        </div>
+        <div class="part2">
+            <div class=" grid wide">
+                <div class="row">
+                    <div class="col l-3 m-6 c-12">
+                        <div class="box">
+                            <div class="vertical-center">
+                                <img src="./img/icon-1.png" alt="">
+                                <h3>
+                                    IMMERSIVE DIGITAL EXPERIENCE
+                                </h3>
+                                <p> AR (Augmented Reality) <br>
+                                    VR (Virtual Reality) <br>
+                                    XR (Extended Reality) <br>
+                                    MR (Mixed reality) </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-3 m-6 c-12">
+                        <div class="box">
+                            <div class="vertical-center">
+                                <img src="./img/icon-2.png" alt="">
+                                <h3>
+                                    META STUDIO
+                                </h3>
+                                <div style="height: 7px;"></div>
+                                <p>RVS <br>
+                                    (Reality Virtual Studio)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-3 m-6 c-12">
+                        <div class="box">
+                            <div class="vertical-center">
+                                <img src="./img/icon-3.png" alt="">
+                                <h3>
+                                    CREATION
+                                </h3>
+                                <div style="height: 7px;"></div>
+                                <p>Game for Learning</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-3 m-6 c-12">
+                        <div class="box">
+                            <div class="vertical-center">
+                                <img src="./img/icon-4.png" alt="">
+                                <h3>
+                                    METAVERSITY
+                                </h3>
+                                <div style="height: 7px;"></div>
+                                <p>Why institutions should be metaversity? Why institutions need metaversity?</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </div>
+    <div id="project">
+        <h2 class="pc-h1 mobile-h2 " style="color: #09007a;text-align: center; font-weight: bolder;">Service performance</h2>
+        <div class=" grid wide">
+            <div class="row">
+                <div class="col l-12 m-12 c-12">
+                    <img src="./img/project-1-eng.png" style="width: 100%;max-height: 100%;height: auto;" alt="">
+                    <img src="./img/project-2-eng.png" style="width: 100%;max-height: 100%;height: auto;" alt="">
+                    <img src="./img/project-3-eng.png" style="width: 100%;max-height: 100%;height: auto;" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div style="border: 4px solid #1f4280;"></div>
+    <div id="partners">
+        <div class="slide-logo">
+            <h2 class="pc-h2-partners mobile-h2" style="color: white; text-align: center;">Partners</h2>
+            <div class="slider">
+                <div class="slide-track">
+                    <div class="slide">
+                        <img src="./img/partner-1.png" height="100px" width="100px" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="./img/partner-2.png" height="100px" width="100px" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="./img/partner-3.png" height="100px" width="100px" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="./img/partner-2.png" height="100px" width="100px" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="./img/partner-1.png" height="100px" width="100px" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="./img/partner-3.png" height="100px" width="100px" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="./img/partner-1.png" height="100px" width="100px" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="./img/partner-2.png" height="100px" width="100px" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="./img/partner-3.png" height="100px" width="100px" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="./img/partner-2.png" height="100px" width="100px" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="./img/partner-3.png" height="100px" width="100px" alt="" />
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div>
+    <div style="border: 4px solid #1f4280;"></div>
+    
+    <br>
+    <div id="contact-us" class="grid wide" style="height: fit-content; padding-bottom: 10px;">
+        <div class="row">
+            <div class="col l-5 m-5 c-12">
+                <div class="content-contact">
+                    <h2 class="mobile-h2 style-text-contact-us">Contact us</h2>
+                <p>
+                    Address: 26 Hoang Ke Viem Street, Ward 13, Tan Binh District, Ho Chi Minh City <br>
+                    Email: hyunjin@lineus.kr <br>
+                    Telephone: 028 36200 130
+                </p>
+                </div>
+            </div>
+         
+            <div class="col l-7 m-7 c-12" >
+                <div class="form-mail">
+                    <form action="">
+                        <label for="username">Name*: </label> <br>
+                        <input class="input-style" type="text" id="username" name="username"><br>
+                        <label for="Email">Email*: </label> <br>
+                        <input class="input-style" type="email" id="email" name="email"><br>
+                        <label for="Telephone">Telephone*: </label> <br>
+                        <input class="input-style" type="tel" id="tel" name="tel"><br>
+                        <label for="Message">Message: </label> <br>
+                        <textarea class="elementor-field-textual elementor-field  elementor-size-sm" name="form_fields[message]" id="form-field-message" rows=""  aria-required="true"></textarea>
+                        <br><br>
+                        <input type="submit" id="submit" value="Send Message">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="grid wide">
+            <div class="row">
+                <div class="col l-5 m-12 c-12 ">
+                    <a href="./index.html" style="text-decoration: none;"><h2 style="font-weight: bolder; font-size: 30px; color: white; margin-top: 0px;">UPSTREAM CO,.LTD</h2></a>
+                    <div class="icon-footer">
+                        <img src="./img/placeholder.png" alt="">
+                        <p>26 Hoang Ke Viem Street, Ward 13, Tan Binh District, Ho Chi Minh City</p>
+                    </div>
+                    <div class="icon-footer">
+                        <img src="./img/email.png" alt="">
+                        <p>hyunjin@lineus.kr</p>
+                    </div>
+                    <div class="icon-footer">
+                        <img src="./img/phone-call.png" alt="">
+                        <p>028 36200 130</p>
+                    </div>
+                    <p style="color: white; font-size: 14px;">COPYRIGHT © Metaversity. ALL RIGHTS RESERVED.</p>
+                </div>
+                <div class="col l-7 m-12 c-12">
+                    <iframe style="border-radius: 10px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.1788563463633!2d106.64849611462277!3d10.797609592307158!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317529fac11bffe5%3A0x3bc969477ef5d240!2sUPSTREAM%20CO.%2C%20LTD!5e0!3m2!1svi!2s!4v1648008566593!5m2!1svi!2s" width="100%" height="100%" frameborder="0" style="border:0"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

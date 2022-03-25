@@ -1,0 +1,73 @@
+footer{
+    background-color: navy;
+    padding-top: 40px;
+    margin-left: 0 auto;
+    margin-right: 0 auto;
+}
+.footer-content{
+    text-align: center;
+    color: oldlace;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+.socials li{
+    list-style-type: none;
+    text-align: center;
+}
+.socials li{
+    margin: 0 10px;
+}
+.socials a{
+    text-decoration: none;
+    color: rgb(248, 244, 244);
+}
+.socials a i{
+    font-size: 1.1rem;
+    transition: color .4s ease;
+
+}
+.socials a:hover i{
+    color: aqua;
+}
+.footer-bottom{
+    text-align: center;
+    color: white;
+    padding-bottom: 20px;
+}
+/*Mobile: width <= 46.25em*/
+/*Grid column trên PC 12/16 cột, tablet 8 cột, mobile 4 cột
+Grid Gutter trên PC/tablet 24px, mobile 16px*/
+/*for tablet */
+/*
+@media (min-width:740px){
+    .row{
+        margin-left: -8px;
+        margin-right: -8px;
+    }
+}
+*/
+/*For PC low resolution*/
+/*@media (min-width:1113px){
+    .row{
+        margin-left: -12px;
+        margin-right: -12px;
+    }
+}
+*/
+/*For PC higher than PC low resolution*/
+/*
+@media (min-width: 1024px) and (max-width: 1239px){
+    .row.gird{
+        margin-left: -12px;
+        margin-right: -12px;
+    }
+}
+*/
